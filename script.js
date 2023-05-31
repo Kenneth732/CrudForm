@@ -27,3 +27,13 @@ function addBook(event) {
         author: author
     };
 
+    // Add the book to the array
+    books.push(book);
+
+    // Clear the input fields
+    titleInput.value = '';
+    authorInput.value = '';
+
+    // Render the book list
+    renderBookList();
+}
