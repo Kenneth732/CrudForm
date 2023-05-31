@@ -11,3 +11,19 @@ let books = [];
 function addBook(event) {
     event.preventDefault();
 
+    // Get the book details from the input fields
+    const title = titleInput.value.trim();
+    const author = authorInput.value.trim();
+
+    if (title === '' || author === '') {
+        alert('Please enter both title and author.');
+        return;
+    }
+
+    // Create a new book object
+    const book = {
+        id: Date.now().toString(),
+        title: title,
+        author: author
+    };
+
