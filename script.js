@@ -40,6 +40,10 @@ function addBook(event) {
 
 // Function to delete a book
 function deleteBook(id) {
+    // Remove the book from the array
+    books = books.filter(book => book.id !== id);
 
+    // Render the book list
+    renderBookList();
 }
 
