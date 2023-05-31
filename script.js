@@ -37,3 +37,9 @@ function addBook(event) {
     // Render the book list
     renderBookList();
 }
+
+// Function to delete a book
+function deleteBook(id) {
+
+}
+
